@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background-color: #343a40; */
+        }
+        /* .icons .fa{
+            padding: 5px 7px;
+    font-size: 30px;
+    background-color:rgb(78, 74, 74);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition-duration: 1s;
+        } */
+        #styleheading{
+  font-family: 'FontAwesome';
+  font-weight: 600;
+  font-size: 40px;
+}
+#arrow .fa{
+  padding: 10px 11px;
+    font-size: 15px;
+    background-color:white;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition-duration: 1s;
+
+}
+/* #cards{
+  margin-top: 10px;
+  margin-left: 15px;
+padding: 20px 20px;
+border-radius: 10px;
+box-shadow:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
+transition-duration: 1s;
+} */
+
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- <nav class="navbar navbar-expand-lg bg-dark">
+        <a class="navbar-brand " href="#"><img  width="100" src="images/1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a style="color: white;" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white; "class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div style="background-color: black;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a style="color: white; " class="dropdown-item" href="#">Action</a>
+                <a style="color: white; " class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a style="color: white; " class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a style="color: white;background-color: black; " class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav> -->
+   <!-- sliders a rha ha -->
+   <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img width="100% " height="50%" src="images/banner.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div> -->
+
+<!--//////////////////////////////////////////////////////////////  -->
+<!-- <div  style="background-color: rgb(255, 248, 239);" class="pt-5 pb-5">
+  <div class="container mt-5  d-flex " >
+<div  class=" text-white col-lg-6">
+   
+<p class="lead text-dark" >WELCOME TO MY PROFILE</p>
+<h2 class="display-4 text-dark">Hi, I'm  <span class="text-danger ">Ayesha Khadim</span>
+<p class="text-dark">React Developer</p> </h2>
+<p class="text-dark mt-4" >
+I am a Frontend web developer and designer. I can develop a website on WordPress and react. I have 2 Years+ of Experience in react Web Developing and also grip on WordPress E-commerce Website.</p>
+
+
+
+<button class="btn btn-outline-danger">Learn More</button>
+</div>
+<div class="col-lg-6 text-center">
+</div>
+</div>
+
+</div> -->
+<!--  -->
+
+
+
+<!-- second section -->
+ <div style="background-color:  rgb(255, 248, 239);" class="pb-5 pt-5 mt-5">
+<div class="container " >
+ 
+  <h2 class="text-center mt-5 " id="styleheading">What Services I'm Providing</h2>
+  <p class="text-center">"I offer a range of services to help you achieve your goals. From web design to content creation, I provide solutions tailored to your needs."  </p>
+
+  <div class="row">
+<div class="col-lg-4 col-md-6 col-12 my-2 text-center  " >
+  <div class="  pt-3 pl-3 pr-3 pb-3  bg-white"  id="cards">
+  <img width="100" src="images/computer.png" alt="">
+  <h2>UI/UX Design</h2>
+  <p>UI/UX Design focuses on making websites and apps easy to use and visually appealing. I create user-friendly designs that improve your visitors' experience and help your brand</p>
+  <p id="arrow"><i  class="fa fa-arrow-right"></i></p>
+</div>
+</div>
+<!--  -->
+<div class="col-lg-4 col-md-6 col-12 my-2 text-center " >
+  <div class="  pt-3 pl-3 pr-3 pb-3 bg-white  "   id="cards">
+  <img width="100" src="images/ads-150x150.png" alt="">
+  <h2>Digital Marketing</h2>
+  <p>Digital Marketing helps businesses reach more people online. I use tools like social media, search engines, and ads to promote your brand and increase sales.</p>
+ <p id="arrow">  <i  class="fa fa-arrow-right"></i></p>
+</div>
+</div>
+<!--  -->
+<div class="col-lg-4 col-md-6 col-12 my-2 text-center "  >
+  <div class="  pt-3 pl-3 pr-3 pb-3 bg-white " id="cards">
+  <img width="100" src="images/settings.png" alt="">
+  <h2>Web Development</h2>
+  <p>Web Development is about building websites that work smoothly and look great. I create custom websites that are fast, secure, and easy to use for your visitors.</p>
+ <p id="arrow">  <i  class="fa fa-arrow-right"></i></p>
+</div>
+</div>
+
+</div>
+</div>
+  <!--  -->
+  <!--  -->
+
+</div> 
+
+<!-- <style>
+
+ 
+</style> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
