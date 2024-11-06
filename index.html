@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -19,48 +21,50 @@
             margin: 0;
             padding: 0;
         }
-        body{
-            /* background-color: #343a40; */
-        }
-        /* .icons .fa{
-            padding: 5px 7px;
-    font-size: 30px;
-    background-color:rgb(78, 74, 74);
-    color: white;
-    border: 1px solid gray;
-    border-radius: 20px;
-    margin-right: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition-duration: 1s;
-        } */
         #styleheading{
-  font-family: 'FontAwesome';
+  font-family: sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 25px;
+  transition: 0.1s;
 }
-#arrow .fa{
-  padding: 10px 11px;
-    font-size: 15px;
-    background-color:white;
-    color: gray;
-    border: 1px solid gray;
-    border-radius: 20px;
-    margin-right: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition-duration: 1s;
-
+#styleheading:hover{
+  color: #dc3545;
+  transition: 0.1s;
 }
-/* #cards{
-  margin-top: 10px;
-  margin-left: 15px;
-padding: 20px 20px;
-border-radius: 10px;
-box-shadow:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
-transition-duration: 1s;
-} */
+/* serivices */
+.service-card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .service-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: translateY(-10px);
+  }
+  .icon {
+      font-size: 50px;
+      color: #ff5e5e;
+      margin-bottom: 15px;
+  }
+  .service-content h5 {
+      font-weight: bold;
+      color: #333;
+      margin-top: 15px;
+  }
+  .service-content p {
+      color: #555;
+  }
+  /*  */
 /* contact form */
 #contact-section {
-      background: linear-gradient(135deg, #4c669f, #3b5998, #192f6a);
+  background-image: linear-gradient(rgba(1, 2, 5, 0.7),rgba(0, 0, 1, 0.7),rgba(7, 8, 18, 0.7),rgba(0, 2, 14, 0.7)), url(images/Pink\ White\ Modern\ Exclusive\ Discounts\ Blog\ Banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+      /* background: linear-gradient(135deg, #4c669f, #3b5998, #192f6a); */
       color: white;
       padding: 60px 0;
     }
@@ -77,6 +81,230 @@ transition-duration: 1s;
     .bg-black{
       background-color: black !important;
     }
+    /* ######################################################################  education experience */
+ 
+ /*##################################################  */
+ /* General Card Styles */
+.card {
+   border: none;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease;
+}
+
+/* Hover Animation for Cards */
+.card:hover {
+   transform: translateY(-15px) scale(1.05);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation for Buttons */
+.btn-outline-danger {
+   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+   background-color: #dc3545;
+   color: white;
+   transform: scale(1.1);
+}
+
+/* Hover Effect for Scroll Arrow */
+.scroll-arrow {
+   display: inline-block;
+   animation: bounceArrow 1.5s infinite;
+   font-size: 50px;
+   color: #dc3545;
+   transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.scroll-arrow:hover {
+   transform: translateY(-10px);
+   color: #28a745; /* Change arrow color on hover */
+}
+
+/* Arrow Bounce Effect */
+@keyframes bounceArrow {
+   0% {
+       transform: translateY(0);
+   }
+   50% {
+       transform: translateY(10px);
+   }
+   100% {
+       transform: translateY(0);
+   }
+}
+
+/* Animation for Education and Experience Cards */
+.animate-card {
+   opacity: 0;
+   transform: translateY(50px);
+   animation: fadeInUp 1s ease-out forwards, bounceIn 1.2s ease-out 0.5s forwards;
+}
+
+/* Slide Up Animation */
+@keyframes fadeInUp {
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* Bouncy Animation */
+@keyframes bounceIn {
+   0% {
+       transform: scale(0.5);
+   }
+   60% {
+       transform: scale(1.1);
+   }
+   100% {
+       transform: scale(1);
+   }
+}
+
+/* Hover Effect for Cards and Links */
+.card-body:hover .btn-outline-danger {
+   background-color: #dc3545;
+   color: white;
+   transform: scale(1.1);
+}
+
+/* Button Hover Animation */
+.btn-outline-danger:hover {
+   background-color: #dc3545;
+   color: white;
+   transition: background-color 0.3s ease;
+}
+
+/* Hover on Card Titles */
+.card-title:hover {
+   color: #dc3545;
+   transform: scale(1.05);
+   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Smooth Scroll Effect */
+html {
+   scroll-behavior: smooth;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .col-md-6 {
+       margin-bottom: 20px;
+   }
+   .container {
+       padding: 20px;
+   }
+}
+
+/* ################################################################################## */
+   /*                                  skils section +image  */
+
+     /* Skills and Image Section Styles */
+     .skills-section {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 50px;
+     }
+
+     .skills-card {
+         width: 100%;
+         margin-bottom: 20px;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+     }
+
+     .skills-card:hover {
+         transform: translateY(-10px);
+         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+     }
+
+     /* Image Section */
+     .image-section img {
+         width: 100%;
+         height: auto;
+         border-radius: 10px;
+         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s ease;
+     }
+
+     .image-section img:hover {
+         transform: scale(1.05);
+     }
+
+     /* Hover Effect on Skills Text */
+     .skill-title:hover {
+         color: #dc3545;
+         transform: scale(1.1);
+         transition: color 0.3s ease, transform 0.3s ease;
+     }
+
+     /* Animation for Loading Elements */
+     .fade-in {
+         opacity: 0;
+         transform: translateY(30px);
+         animation: fadeIn 1s ease-out forwards;
+     }
+
+     @keyframes fadeIn {
+         to {
+             opacity: 1;
+             transform: translateY(0);
+         }
+     }
+
+     /* For mobile responsiveness */
+     @media (max-width: 768px) {
+         .skills-section {
+             align-items: flex-start;
+         }
+     }
+     /*................................................................. about page section */
+     .portfolio-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        .portfolio-content h2 {
+            font-weight: bold;
+        }
+        .portfolio-btn {
+            /* background-color: #ff5722; */
+            background-color: #ff5e5e;
+            color: #fff;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .portfolio-btn:hover {
+            background-color: #ff7043;
+        }
+        .portfolio-img {
+            animation: fadeInLeft 1s;
+        }
+        .portfolio-info {
+            animation: fadeInRight 1s;
+        }
+        .icon-text {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .icon-text i {
+            /* color: #ff5722; */
+            color: #ff5e5e;
+            margin-right: 8px;
+        }
+        @media (max-width: 768px) {
+            .portfolio-img img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+/* ................................end section skills */
     </style>
   </head>
   <body>
@@ -153,7 +381,51 @@ transition-duration: 1s;
   </div>
 
 <!--///////////////////////////////////     about       ///////////////////////////  -->
-<div  style="background-color: rgb(255, 248, 239);" class="pt-5 pb-5" id="about">
+<section class="portfolio-section">
+  <div class="container">
+      <div class="row align-items-center">
+          <!-- Image Side -->
+          <div class="col-md-6 portfolio-img d-flex justify-content-center">
+              <img src="images/Untitled design (65).png" alt="Portfolio Image" class="img-fluid rounded-circle">
+          </div>
+
+          <!-- Content Side -->
+          <div class="col-md-6 portfolio-info">
+              <h6 class="text-uppercase text-danger">About Me</h6>
+              <h2 class="display-5 mb-3 card-title" id="styleheading">WELCOME TO MY PROFILE</h2>
+              <h2 class="text-dark card-title">Hi, I'm  <span class="text-danger ">Ayesha Khadim</span></h2>
+              <p class="text-muted mb-4">
+                I am a Frontend web developer and designer. I can develop a website on WordPress and react. I have 2 Years+ of Experience in react Web Developing and also grip on WordPress E-commerce Website.
+              </p>
+              
+              <!-- Icon Text Rows -->
+              <div class="row">
+                  <div class="col-6 mb-2 icon-text">
+                      <i class="fas fa-users"></i> Experienced Team
+                  </div>
+                  <div class="col-6 mb-2 icon-text">
+                      <i class="fas fa-cogs"></i> Tailored Solutions
+                  </div>
+                  <div class="col-6 mb-2 icon-text">
+                      <i class="fas fa-rocket"></i> Latest Technology
+                  </div>
+                  <div class="col-6 mb-2 icon-text">
+                      <i class="fas fa-headset"></i> Reliable Support
+                  </div>
+              </div>
+
+              <!-- Button -->
+              <a href="#" class="btn portfolio-btn px-4 py-2 mt-4">Explore More</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- ya last section ha  -->
+<!-- <div  style="background-color: rgb(255, 248, 239);" class="pt-5 pb-5" id="about">
   <div class="container mt-5  d-flex " >
 <div  class=" text-white col-lg-6">
    
@@ -172,144 +444,214 @@ I am a Frontend web developer and designer. I can develop a website on WordPress
 </div>
 </div>
 
-</div>
-<!--  second section  -->
- <div style="background-color:  rgb(255, 248, 239);" class="pb-5 pt-5 mt-5">
-<div class="container " >
- 
-  <h2 class="text-center mt-5 " id="styleheading">What Services I'm Providing</h2>
-  <p class="text-center">"I offer a range of services to help you achieve your goals. From web design to content creation, I provide solutions tailored to your needs."  </p>
+</div> -->
 
+<!--  my services -->
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">My Services</h2>
   <div class="row">
-<div class="col-lg-4 col-md-6 col-12 my-2 text-center  " >
-  <div class="  pt-3 pl-3 pr-3 pb-3  bg-white"  id="cards">
-  <img width="100" src="images/computer.png" alt="">
-  <h2>UI/UX Design</h2>
-  <p>UI/UX Design focuses on making websites and apps easy to use and visually appealing. I create user-friendly designs that improve your visitors' experience and help your brand</p>
-  <p id="arrow"><i  class="fa fa-arrow-right"></i></p>
-</div>
-</div>
-<!--  -->
-<div class="col-lg-4 col-md-6 col-12 my-2 text-center " >
-  <div class="  pt-3 pl-3 pr-3 pb-3 bg-white  "   id="cards">
-  <img width="100" src="images/ads-150x150.png" alt="">
-  <h2>Digital Marketing</h2>
-  <p>Digital Marketing helps businesses reach more people online. I use tools like social media, search engines, and ads to promote your brand and increase sales.</p>
- <p id="arrow">  <i  class="fa fa-arrow-right"></i></p>
-</div>
-</div>
-<!--  -->
-<div class="col-lg-4 col-md-6 col-12 my-2 text-center "  >
-  <div class="  pt-3 pl-3 pr-3 pb-3 bg-white " id="cards">
-  <img width="100" src="images/settings.png" alt="">
-  <h2>Web Development</h2>
-  <p>Web Development is about building websites that work smoothly and look great. I create custom websites that are fast, secure, and easy to use for your visitors.</p>
- <p id="arrow">  <i  class="fa fa-arrow-right"></i></p>
-</div>
-</div>
-
-</div>
-</div>
-  <!--  -->
-  <!--  -->
-
-</div> 
-<!-- ................................education -->
-<div class="container">
-  <!-- Example row of columns -->
-  <div class="row mt-5 ">
-    <div class="col-lg-6">
-      <h2 id="styleheading" class="text-center mt-5">Education</h2>
- 
-    <div class="col-md-12 ">
-      <div class="border border-1 border-success rounded p-3">
-      <h2 id="styleheading"style="font-size: 25px;">BS in Computer Science</h2>
-      <h5>University of Sahiwal(2020-2024)</h5>
-      <p class="text-danger">3.41/4      </p>
-      <p>The training provided by universities in order to prepare people to work in various sectors of the economy.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-    </div>
-    </div>
-    <!--  -->
-    <div class="col-md-12">
-      <div class="border border-1 border-success rounded p-3 my-4">
-      <h2 id="styleheading" style="font-size: 25px;">Intermediate Education</h2>
-      <h5>FSC(2017-2019)      </h5>
-      <p class="text-danger">710/1100</p>
-      <p>FSC From DPS Okara. Higher education is tertiary education leading to the award of an academic degree.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-    </div>
-    </div>
-    <!--  -->
-
-    <div class="col-md-12">
-      <div class="border border-1 border-success rounded p-3">
-      <h2 id="styleheading" style="font-size: 25px;">Secondary School Education</h2>
-      <h5>Matric with science(2016-2017)</h5>
-      <p class="text-danger">806/1100</p>
-      <p>Matric From "Faisal Public girl high school".Education covers two phases on the Standard Classification.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-    </div>
-    </div>
-  </div>
-  <!-- .........................................skills -->
-  <div class="col-lg-6" id="skills">
-    <section id="skills" >
-      <div class="container">
-        <h2 class="text-center mb-4 mt-5" id="styleheading">My Skills</h2>
-        
-        <!-- Skill 1 -->
-        <div class="mb-4">
-          <div class="d-flex align-items-center mb-1">
-            <i class="fa fa-code mr-2"></i>
-            <h5 class="mb-0">HTML & CSS</h5>
+      <div class="col-md-4 mb-4">
+          <div class="service-card">
+              <i class="fas fa-mobile-alt icon"></i>
+              <div class="service-content">
+                  <h5>Responsive Design</h5>
+                  <p>Designing websites that look great on all devices, with modern and sleek layouts that attract users and keep them engaged.</p>
+              </div>
           </div>
-          <div class="progress" style="height: 20px;" id="progress-html-css">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-          </div>
-        </div>
-    
-        <!-- Skill 2 -->
-        <div class="mb-4">
-          <div class="d-flex align-items-center mb-1">
-            <i class="fa fa-js-square mr-2"></i>
-            <h5 class="mb-0">JavaScript</h5>
-          </div>
-          <div class="progress" style="height: 20px;" id="progress-javascript">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-          </div>
-        </div>
-    
-        <!-- Skill 3 -->
-        <div class="mb-4">
-          <div class="d-flex align-items-center mb-1">
-            <i class="fa fa-react mr-2"></i>
-            <h5 class="mb-0">React</h5>
-          </div>
-          <div class="progress" style="height: 20px;" id="progress-react">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-          </div>
-        </div>
-    
-        <!-- Skill 4 -->
-        <div class="mb-4">
-          <div class="d-flex align-items-center mb-1">
-            <i class="fa fa-database mr-2"></i>
-            <h5 class="mb-0">MySQL</h5>
-          </div>
-          <div class="progress" style="height: 20px;" id="progress-mysql">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-          </div>
-        </div>
-    
       </div>
-    </section>
-   </div>
+      <div class="col-md-4 mb-4">
+          <div class="service-card">
+              <i class="fab fa-js icon"></i>
+              <div class="service-content">
+                  <h5>JavaScript Development</h5>
+                  <p>Building dynamic and interactive websites using JavaScript, ensuring smooth animations.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="service-card">
+              <i class="fab fa-react icon"></i>
+              <div class="service-content">
+                  <h5>React.js Expertise</h5>
+                  <p>Creating efficient, responsive web applications using React.js, focusing on user experience and fast load times.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="service-card">
+              <i class="fab fa-node-js icon"></i>
+              <div class="service-content">
+                  <h5>Node.js Proficiency</h5>
+                  <p>Building server-side applications with Node.js, handling large data sets and ensuring seamless functionality.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="service-card">
+              <i class="fas fa-globe icon"></i>
+              <div class="service-content">
+                  <h5>Cross-Browser Compatibility</h5>
+                  <p>Ensuring websites are compatible across all browsers, giving users a consistent experience no matter their choice.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="service-card">
+              <i class="fas fa-cogs icon"></i>
+              <div class="service-content">
+                  <h5>Code Optimization</h5>
+                  <p>Optimizing code to enhance performance, reducing load times and creating efficient web experiences for users.</p>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
-  <hr>
-<!-- ..........................................section 2 -->
+<!--############################################################# education copy code -->
+<div class="container py-5">
+  <div class="row">
+      <!-- Education Section -->
+      <div class="col-md-6">
+          <h2 class="text-center text-danger mb-4">Education</h2>
+          <div class="education-card mb-4 shadow animate-card">
+              <div class="card-body">
+                  <h5 class="card-title font-weight-bold">BS in Computer Science</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">University of Sahiwal (2020-2024)</h6>
+                  <p class="text-danger font-weight-bold">3.41/4</p>
+                  <p class="card-text">The training provided by universities to prepare people to work in various sectors of the economy.</p>
+                  <a href="#" class="btn btn-outline-danger">View details »</a>
+              </div>
+          </div>
+          <div class="education-card mb-4 shadow animate-card">
+              <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Intermediate Education</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">FSC (2017-2019)</h6>
+                  <p class="text-danger font-weight-bold">710/1100</p>
+                  <p class="card-text">FSC from DPS Okara. Higher education leading to the award of an academic degree.</p>
+                  <a href="#" class="btn btn-outline-danger">View details »</a>
+              </div>
+          </div>
+          <div class="education-card mb-4 shadow animate-card">
+              <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Secondary School Education</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Matric with Science (2016-2017)</h6>
+                  <p class="text-danger font-weight-bold">806/1100</p>
+                  <p class="card-text">Matric from Faisal Public Girl High School. Covers two phases on the Standard Classification.</p>
+                  <a href="#" class="btn btn-outline-danger">View details »</a>
+              </div>
+          </div>
+      </div>
 
+      <!-- Experience Section -->
+      <div class="col-md-6">
+          <h2 class="text-center text-danger mb-4">Experience</h2>
+          <div class="experience-card mb-4 shadow animate-card">
+              <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Web Developer Intern</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">WebSphere UK Company (2024)</h6>
+                  <p class="text-danger font-weight-bold">6 months</p>
+                  <p class="card-text">Worked on front-end development with HTML, CSS, and JavaScript to build responsive websites.</p>
+                  <a href="#" class="btn btn-outline-danger">View details »</a>
+              </div>
+          </div>
+          <div class="experience-card mb-4 shadow animate-card">
+              <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Junior WordPress Developer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">WebSphere UK SoftwareHouse (2024)</h6>
+                  <p class="text-danger font-weight-bold">1 year</p>
+                  <p class="card-text">Contributed to the development of client websites, focusing on responsive design and performance optimization.</p>
+                  <a href="#" class="btn btn-outline-danger">View details »</a>
+              </div>
+          </div>
+          <div class="experience-card mb-4 shadow animate-card">
+              <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Frontend Developer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">WebSphere UK SoftwareHouse(2024)</h6>
+                  <p class="text-danger font-weight-bold">6 months</p>
+                  <p class="card-text">Designed and developed websites for small businesses, focusing on user experience and SEO optimization.</p>
+                  <a href="#" class="btn btn-outline-danger">View details »</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Scroll Arrow -->
+  <div class="text-center mt-5">
+      <a href="#education-section" class="scroll-arrow">
+          <i class="fa fa-arrow-down" style="font-size: 30px;"></i>
+      </a>
+  </div>
 </div>
+
+
+
+
+      <!--skills and image  -->
+      <div class="container py-5">
+        <div class="row">
+            <!-- Skills Section -->
+            <div class="col-md-6">
+                <h2 class="text-center text-danger mb-4 fade-in">My Skills</h2>
+    
+                <!-- Skill Cards -->
+                <div class="skills-card card fade-in">
+                    <div class="card-body">
+                        <h5 class="card-title skill-title">HTML</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skills-card card fade-in">
+                    <div class="card-body">
+                        <h5 class="card-title skill-title">CSS</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skills-card card fade-in">
+                    <div class="card-body">
+                        <h5 class="card-title skill-title">JavaScript</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-card card fade-in">
+                  <div class="card-body">
+                      <h5 class="card-title skill-title">JavaScript</h5>
+                      <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skills-card card fade-in">
+                <div class="card-body">
+                    <h5 class="card-title skill-title">JavaScript</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <h2 class="text-center text-danger mb-4 fade-in">My Image</h2>
+                <div class="image-section fade-in">
+                    <img src="images/Untitled design (64).png" alt="My Image">
+                </div>
+            </div>
+        </div>
+    </div>
+      
+      <!-- Skills Section end -->
+      
+  
+<!-- ................................porfolio -->
 
 <!--  -->
 <section id="portfolio" class="py-5" >
@@ -320,13 +662,13 @@ I am a Frontend web developer and designer. I can develop a website on WordPress
       <!-- Portfolio Item 1 -->
       <div class="col-md-4 mb-4">
         <div class="card border-0 shadow-sm h-100" id="portfolio-item-1">
-          <img src="image1.jpg" class="card-img-top" alt="Portfolio Item 1">
+          <img style="object-fit: cover;" src="images/Untitled design (60).png" class="card-img-top" alt="Portfolio Item 1">
           <div class="card-body">
-            <h5 class="card-title">Project Title 1</h5>
-            <p class="card-text">A short description of the project goes here. Describe the main features or purpose of the project.</p>
+            <h5 class="card-title"><b>Explore Italy Website</b></h5>
+            <p class="card-text">"Explore Italy is your ultimate guide to discovering Italy’s rich culture, stunning landscapes, historical landmarks, and unforgettable experiences."</p>
           </div>
           <div class="card-footer bg-white border-0">
-            <a href="#" class="btn btn-primary">View Project</a>
+            <a href="https://ayeshkhadam.netlify.app/" class="btn btn-outline-danger">View Project</a>
           </div>
         </div>
       </div>
@@ -334,13 +676,14 @@ I am a Frontend web developer and designer. I can develop a website on WordPress
       <!-- Portfolio Item 2 -->
       <div class="col-md-4 mb-4">
         <div class="card border-0 shadow-sm h-100" id="portfolio-item-2">
-          <img src="image2.jpg" class="card-img-top" alt="Portfolio Item 2">
+          <img src="images/Untitled design (61).png" class="card-img-top" alt="Portfolio Item 2">
           <div class="card-body">
-            <h5 class="card-title">Project Title 2</h5>
-            <p class="card-text">A short description of the project goes here. Describe the main features or purpose of the project.</p>
+            <h5 class="card-title"> <b>Ayesha Fitness Gym Website</b></h5>
+            <p class="card-texAyesha Fitness Gymt">"Ayesha Fitness Gym is a state-of-the-art fitness center offering personalized training, advanced equipment, and a motivating environment for all."
+            </p>
           </div>
           <div class="card-footer bg-white border-0">
-            <a href="#" class="btn btn-primary">View Project</a>
+            <a href="file:///C:/Users/hp/Desktop/gym%20website/index.html" class="btn btn-outline-danger">View Project</a>
           </div>
         </div>
       </div>
@@ -348,13 +691,14 @@ I am a Frontend web developer and designer. I can develop a website on WordPress
       <!-- Portfolio Item 3 -->
       <div class="col-md-4 mb-4">
         <div class="card border-0 shadow-sm h-100" id="portfolio-item-3">
-          <img src="image3.jpg" class="card-img-top" alt="Portfolio Item 3">
+          <img src="images/Untitled design (62).png" class="card-img-top" alt="Portfolio Item 3">
           <div class="card-body">
-            <h5 class="card-title">Project Title 3</h5>
-            <p class="card-text">A short description of the project goes here. Describe the main features or purpose of the project.</p>
+            <h5 class="card-title"><b>@yesha OnlineStore Website</b></h5>
+            <p class="card-text">"@yesha OnlineStore is your one-stop shop for stylish, high-quality products, offering a seamless online shopping experience with fast delivery."</p>
+            <p></p>
           </div>
           <div class="card-footer bg-white border-0">
-            <a href="#" class="btn btn-primary">View Project</a>
+            <a href="https://ayeshaonlinestore.netlify.app/" class="btn btn-outline-danger">View Project</a>
           </div>
         </div>
       </div>
@@ -411,7 +755,7 @@ I am a Frontend web developer and designer. I can develop a website on WordPress
 
           <!-- Submit Button -->
           <div class="text-center">
-            <button type="submit" class="btn btn-primary px-4 py-2" id="contact-submit">Send Message</button>
+            <button type="submit" class="btn btn-primary  px-4 py-2 " id="contact-submit">Send Message</button>
           </div>
 
         </form>
@@ -423,16 +767,12 @@ I am a Frontend web developer and designer. I can develop a website on WordPress
 
  
 </style> -->
+  <!--  -->
 
 
+<!-- Bootstrap and JS for Anim -->
 
-
-
-
-
-
-
-
+       
 
 
 
