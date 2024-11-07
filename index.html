@@ -1,347 +1,381 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <style>
-        
-    </style>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<head>
+  <style>
 
-    <title>Hello, world!</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        #styleheading{
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-  transition: 0.1s;
-}
-#styleheading:hover{
-  color: #dc3545;
-  transition: 0.1s;
-}
-/* serivices */
-.service-card {
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+  
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Hello, world!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #styleheading {
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 25px;
+      transition: 0.1s;
+    }
+
+    #styleheading:hover {
+      color: #dc3545;
+      transition: 0.1s;
+    }
+
+    /* serivices */
+    .service-card {
       border: 1px solid #ddd;
       padding: 20px;
       border-radius: 10px;
       transition: 0.3s;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .service-card:hover {
+    }
+
+    .service-card:hover {
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       transform: translateY(-10px);
-  }
-  .icon {
+    }
+
+    .icon {
       font-size: 50px;
       color: #ff5e5e;
       margin-bottom: 15px;
-  }
-  .service-content h5 {
+    }
+
+    .service-content h5 {
       font-weight: bold;
       color: #333;
       margin-top: 15px;
-  }
-  .service-content p {
+    }
+
+    .service-content p {
       color: #555;
-  }
-  /*  */
-/* contact form */
-#contact-section {
-  background-image: linear-gradient(rgba(1, 2, 5, 0.7),rgba(0, 0, 1, 0.7),rgba(7, 8, 18, 0.7),rgba(0, 2, 14, 0.7)), url(images/Pink\ White\ Modern\ Exclusive\ Discounts\ Blog\ Banner.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    }
+
+    /*  */
+    /* contact form */
+    #contact-section {
+      background-image: linear-gradient(rgba(1, 2, 5, 0.7), rgba(0, 0, 1, 0.7), rgba(7, 8, 18, 0.7), rgba(0, 2, 14, 0.7)), url(images/Pink\ White\ Modern\ Exclusive\ Discounts\ Blog\ Banner.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       /* background: linear-gradient(135deg, #4c669f, #3b5998, #192f6a); */
       color: white;
       padding: 60px 0;
     }
+
     #contact-section h2 {
       font-weight: bold;
     }
+
     #contact-section .form-control,
     #contact-section .btn {
       border-radius: 30px;
     }
+
     #contact-section .form-control::placeholder {
       color: #ccc;
     }
-    .bg-black{
+
+    .bg-black {
       background-color: black !important;
     }
+
     /* ######################################################################  education experience */
- 
- /*##################################################  */
- /* General Card Styles */
-.card {
-   border: none;
-   border-radius: 10px;
-   overflow: hidden;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   transition: all 0.3s ease;
-}
 
-/* Hover Animation for Cards */
-.card:hover {
-   transform: translateY(-15px) scale(1.05);
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    /*##################################################  */
+    /* General Card Styles */
+    .card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
 
-/* Hover Animation for Buttons */
-.btn-outline-danger {
-   transition: background-color 0.3s ease, transform 0.3s ease;
-}
+    /* Hover Animation for Cards */
+    .card:hover {
+      transform: translateY(-15px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.btn-outline-danger:hover {
-   background-color: #dc3545;
-   color: white;
-   transform: scale(1.1);
-}
+    /* Hover Animation for Buttons */
+    .btn-outline-danger {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-/* Hover Effect for Scroll Arrow */
-.scroll-arrow {
-   display: inline-block;
-   animation: bounceArrow 1.5s infinite;
-   font-size: 50px;
-   color: #dc3545;
-   transition: transform 0.3s ease, color 0.3s ease;
-}
+    .btn-outline-danger:hover {
+      background-color: #dc3545;
+      color: white;
+      transform: scale(1.1);
+    }
 
-.scroll-arrow:hover {
-   transform: translateY(-10px);
-   color: #28a745; /* Change arrow color on hover */
-}
+    /* Hover Effect for Scroll Arrow */
+    .scroll-arrow {
+      display: inline-block;
+      animation: bounceArrow 1.5s infinite;
+      font-size: 50px;
+      color: #dc3545;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
 
-/* Arrow Bounce Effect */
-@keyframes bounceArrow {
-   0% {
-       transform: translateY(0);
-   }
-   50% {
-       transform: translateY(10px);
-   }
-   100% {
-       transform: translateY(0);
-   }
-}
+    .scroll-arrow:hover {
+      transform: translateY(-10px);
+      color: #28a745;
+      /* Change arrow color on hover */
+    }
 
-/* Animation for Education and Experience Cards */
-.animate-card {
-   opacity: 0;
-   transform: translateY(50px);
-   animation: fadeInUp 1s ease-out forwards, bounceIn 1.2s ease-out 0.5s forwards;
-}
+    /* Arrow Bounce Effect */
+    @keyframes bounceArrow {
+      0% {
+        transform: translateY(0);
+      }
 
-/* Slide Up Animation */
-@keyframes fadeInUp {
-   to {
-       opacity: 1;
-       transform: translateY(0);
-   }
-}
+      50% {
+        transform: translateY(10px);
+      }
 
-/* Bouncy Animation */
-@keyframes bounceIn {
-   0% {
-       transform: scale(0.5);
-   }
-   60% {
-       transform: scale(1.1);
-   }
-   100% {
-       transform: scale(1);
-   }
-}
+      100% {
+        transform: translateY(0);
+      }
+    }
 
-/* Hover Effect for Cards and Links */
-.card-body:hover .btn-outline-danger {
-   background-color: #dc3545;
-   color: white;
-   transform: scale(1.1);
-}
+    /* Animation for Education and Experience Cards */
+    .animate-card {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease-out forwards, bounceIn 1.2s ease-out 0.5s forwards;
+    }
 
-/* Button Hover Animation */
-.btn-outline-danger:hover {
-   background-color: #dc3545;
-   color: white;
-   transition: background-color 0.3s ease;
-}
+    /* Slide Up Animation */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-/* Hover on Card Titles */
-.card-title:hover {
-   color: #dc3545;
-   transform: scale(1.05);
-   transition: color 0.3s ease, transform 0.3s ease;
-}
+    /* Bouncy Animation */
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.5);
+      }
 
-/* Smooth Scroll Effect */
-html {
-   scroll-behavior: smooth;
-}
+      60% {
+        transform: scale(1.1);
+      }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-   .col-md-6 {
-       margin-bottom: 20px;
-   }
-   .container {
-       padding: 20px;
-   }
-}
+      100% {
+        transform: scale(1);
+      }
+    }
 
-/* ################################################################################## */
-   /*                                  skils section +image  */
+    /* Hover Effect for Cards and Links */
+    .card-body:hover .btn-outline-danger {
+      background-color: #dc3545;
+      color: white;
+      transform: scale(1.1);
+    }
 
-     /* Skills and Image Section Styles */
-     .skills-section {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         margin-bottom: 50px;
-     }
+    /* Button Hover Animation */
+    .btn-outline-danger:hover {
+      background-color: #dc3545;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
 
-     .skills-card {
-         width: 100%;
-         margin-bottom: 20px;
-         transition: transform 0.3s ease, box-shadow 0.3s ease;
-     }
+    /* Hover on Card Titles */
+    .card-title:hover {
+      color: #dc3545;
+      transform: scale(1.05);
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
 
-     .skills-card:hover {
-         transform: translateY(-10px);
-         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-     }
+    /* Smooth Scroll Effect */
+    html {
+      scroll-behavior: smooth;
+    }
 
-     /* Image Section */
-     .image-section img {
-         width: 100%;
-         height: auto;
-         border-radius: 10px;
-         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-         transition: transform 0.3s ease;
-     }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .col-md-6 {
+        margin-bottom: 20px;
+      }
 
-     .image-section img:hover {
-         transform: scale(1.05);
-     }
+      .container {
+        padding: 20px;
+      }
+    }
 
-     /* Hover Effect on Skills Text */
-     .skill-title:hover {
-         color: #dc3545;
-         transform: scale(1.1);
-         transition: color 0.3s ease, transform 0.3s ease;
-     }
+    /* ################################################################################## */
+    /*                                  skils section +image  */
 
-     /* Animation for Loading Elements */
-     .fade-in {
-         opacity: 0;
-         transform: translateY(30px);
-         animation: fadeIn 1s ease-out forwards;
-     }
+    /* Skills and Image Section Styles */
+    .skills-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
 
-     @keyframes fadeIn {
-         to {
-             opacity: 1;
-             transform: translateY(0);
-         }
-     }
+    .skills-card {
+      width: 100%;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-     /* For mobile responsiveness */
-     @media (max-width: 768px) {
-         .skills-section {
-             align-items: flex-start;
-         }
-     }
-     /*................................................................. about page section */
-     .portfolio-section {
-            padding: 60px 0;
-            background-color: #f9f9f9;
-        }
-        .portfolio-content h2 {
-            font-weight: bold;
-        }
-        .portfolio-btn {
-            /* background-color: #ff5722; */
-            background-color: #ff5e5e;
-            color: #fff;
-            border: none;
-            transition: all 0.3s ease;
-        }
-        .portfolio-btn:hover {
-            background-color: #ff7043;
-        }
-        .portfolio-img {
-            animation: fadeInLeft 1s;
-        }
-        .portfolio-info {
-            animation: fadeInRight 1s;
-        }
-        .icon-text {
-            font-size: 1.1rem;
-            color: #555;
-        }
-        .icon-text i {
-            /* color: #ff5722; */
-            color: #ff5e5e;
-            margin-right: 8px;
-        }
-        @media (max-width: 768px) {
-            .portfolio-img img {
-                max-width: 100%;
-                margin-bottom: 20px;
-            }
-        }
-/* ................................end section skills */
-    </style>
-  </head>
-  <body>
-    <!-- header -->
-    <nav class="navbar navbar-expand-lg bg-black">
-        <a class="navbar-brand " href="#"><img  width="100" class="mx-5 my-2" src="images/ayeshalogo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a style="color: white;" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a style="color: white; "class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a style="color: white; "class="nav-link" href="#portfolio">Project</a>
-            </li>
-            <li class="nav-item">
-              <a style="color: white; "class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a style="color: white; "class="nav-link" href="#contact">Contact US</a>
-            </li>
-  
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav> 
-   <!-- sliders a rha ha-->
-   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    .skills-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image Section */
+    .image-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-section img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Hover Effect on Skills Text */
+    .skill-title:hover {
+      color: #dc3545;
+      transform: scale(1.1);
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Animation for Loading Elements */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* For mobile responsiveness */
+    @media (max-width: 768px) {
+      .skills-section {
+        align-items: flex-start;
+      }
+    }
+
+    /*................................................................. about page section */
+    .portfolio-section {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+
+    .portfolio-content h2 {
+      font-weight: bold;
+    }
+
+    .portfolio-btn {
+      /* background-color: #ff5722; */
+      background-color: #ff5e5e;
+      color: #fff;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-btn:hover {
+      background-color: #ff7043;
+    }
+
+    .portfolio-img {
+      animation: fadeInLeft 1s;
+    }
+
+    .portfolio-info {
+      animation: fadeInRight 1s;
+    }
+
+    .icon-text {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .icon-text i {
+      /* color: #ff5722; */
+      color: #ff5e5e;
+      margin-right: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-img img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* ................................end section skills */
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+    <a class="navbar-brand " href="#"><img width="100" class="mx-5 my-2" src="images/ayeshalogo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white; " class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white; " class="nav-link" href="#portfolio">Project</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white; " class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white; " class="nav-link" href="#contact">Contact US</a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- sliders a rha ha-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -351,22 +385,22 @@ html {
       <div class="carousel-item active">
         <img width="100% " height="50%" src="images/AyeshBannerone.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-         
-         
+
+
         </div>
       </div>
       <div class="carousel-item">
         <img src="images/second Banner.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-         
-         
+
+
         </div>
       </div>
       <div class="carousel-item">
         <img src="images/Third Banner.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-         
-         
+
+
         </div>
       </div>
     </div>
@@ -380,52 +414,53 @@ html {
     </button>
   </div>
 
-<!--///////////////////////////////////     about       ///////////////////////////  -->
-<section class="portfolio-section">
-  <div class="container">
+  <!--///////////////////////////////////     about       ///////////////////////////  -->
+  <section class="portfolio-section">
+    <div class="container">
       <div class="row align-items-center">
-          <!-- Image Side -->
-          <div class="col-md-6 portfolio-img d-flex justify-content-center">
-              <img src="images/Untitled design (65).png" alt="Portfolio Image" class="img-fluid rounded-circle">
+        <!-- Image Side -->
+        <div class="col-md-6 portfolio-img d-flex justify-content-center">
+          <img src="images/Untitled design (65).png"alt="Portfolio Image" class="img-fluid animation rounded-circle">
+        </div>
+
+        <!-- Content Side -->
+        <div class="col-md-6 portfolio-info">
+          <h6 class="text-uppercase text-danger">About Me</h6>
+          <h2 class="display-5 mb-3 card-title" id="styleheading">WELCOME TO MY PROFILE</h2>
+          <h2 class="text-dark card-title">Hi, I'm <span class=" colorChange">Ayesha Khadim</span></h2>
+          <p class="text-muted mb-4">
+            I am a Frontend web developer and designer. I can develop a website on WordPress and react. I have 2 Years+
+            of Experience in react Web Developing and also grip on WordPress E-commerce Website.
+          </p>
+
+          <!-- Icon Text Rows -->
+          <div class="row ">
+            <div class="col-md-6 mb-2 icon-text">
+              <i class="fas fa-users"></i> Experienced Team
+            </div>
+            <div class="col-md-6 mb-2 icon-text">
+              <i class="fas fa-cogs"></i> Tailored Solutions
+            </div>
+            <div class="col-md-6 mb-2 icon-text">
+              <i class="fas fa-rocket"></i> Latest Technology
+            </div>
+            <div class="col-md-6 mb-2 icon-text">
+              <i class="fas fa-headset"></i> Reliable Support
+            </div>
           </div>
 
-          <!-- Content Side -->
-          <div class="col-md-6 portfolio-info">
-              <h6 class="text-uppercase text-danger">About Me</h6>
-              <h2 class="display-5 mb-3 card-title" id="styleheading">WELCOME TO MY PROFILE</h2>
-              <h2 class="text-dark card-title">Hi, I'm  <span class="text-danger ">Ayesha Khadim</span></h2>
-              <p class="text-muted mb-4">
-                I am a Frontend web developer and designer. I can develop a website on WordPress and react. I have 2 Years+ of Experience in react Web Developing and also grip on WordPress E-commerce Website.
-              </p>
-              
-              <!-- Icon Text Rows -->
-              <div class="row">
-                  <div class="col-6 mb-2 icon-text">
-                      <i class="fas fa-users"></i> Experienced Team
-                  </div>
-                  <div class="col-6 mb-2 icon-text">
-                      <i class="fas fa-cogs"></i> Tailored Solutions
-                  </div>
-                  <div class="col-6 mb-2 icon-text">
-                      <i class="fas fa-rocket"></i> Latest Technology
-                  </div>
-                  <div class="col-6 mb-2 icon-text">
-                      <i class="fas fa-headset"></i> Reliable Support
-                  </div>
-              </div>
-
-              <!-- Button -->
-              <a href="#" class="btn portfolio-btn px-4 py-2 mt-4">Explore More</a>
-          </div>
+          <!-- Button -->
+          <a href="m-auto" class="btn portfolio-btn px-4 py-2 mt-4">Explore More</a>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 
 
 
-<!-- ya last section ha  -->
-<!-- <div  style="background-color: rgb(255, 248, 239);" class="pt-5 pb-5" id="about">
+  <!-- ya last section ha  -->
+  <!-- <div  style="background-color: rgb(255, 248, 239);" class="pt-5 pb-5" id="about">
   <div class="container mt-5  d-flex " >
 <div  class=" text-white col-lg-6">
    
@@ -446,348 +481,587 @@ I am a Frontend web developer and designer. I can develop a website on WordPress
 
 </div> -->
 
-<!--  my services -->
+  <!--  my services -->
 
-<div class="container mt-5">
-  <h2 class="text-center mb-4">My Services</h2>
-  <div class="row">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">My Services</h2>
+    <div class="row">
       <div class="col-md-4 mb-4">
-          <div class="service-card">
-              <i class="fas fa-mobile-alt icon"></i>
-              <div class="service-content">
-                  <h5>Responsive Design</h5>
-                  <p>Designing websites that look great on all devices, with modern and sleek layouts that attract users and keep them engaged.</p>
-              </div>
+        <div class="service-card">
+          <i class="fas fa-mobile-alt icon"></i>
+          <div class="service-content">
+            <h5>Responsive Design</h5>
+            <p>Designing websites that look great on all devices, with modern and sleek layouts that attract users and
+              keep them engaged.</p>
           </div>
+        </div>
       </div>
       <div class="col-md-4 mb-4">
-          <div class="service-card">
-              <i class="fab fa-js icon"></i>
-              <div class="service-content">
-                  <h5>JavaScript Development</h5>
-                  <p>Building dynamic and interactive websites using JavaScript, ensuring smooth animations.</p>
-              </div>
+        <div class="service-card">
+          <i class="fab fa-js icon"></i>
+          <div class="service-content">
+            <h5>JavaScript Development</h5>
+            <p>Building dynamic and interactive websites using JavaScript, ensuring smooth animations.</p>
           </div>
+        </div>
       </div>
       <div class="col-md-4 mb-4">
-          <div class="service-card">
-              <i class="fab fa-react icon"></i>
-              <div class="service-content">
-                  <h5>React.js Expertise</h5>
-                  <p>Creating efficient, responsive web applications using React.js, focusing on user experience and fast load times.</p>
-              </div>
+        <div class="service-card">
+          <i class="fab fa-react icon"></i>
+          <div class="service-content">
+            <h5>React.js Expertise</h5>
+            <p>Creating efficient, responsive web applications using React.js, focusing on user experience and fast load
+              times.</p>
           </div>
+        </div>
       </div>
       <div class="col-md-4 mb-4">
-          <div class="service-card">
-              <i class="fab fa-node-js icon"></i>
-              <div class="service-content">
-                  <h5>Node.js Proficiency</h5>
-                  <p>Building server-side applications with Node.js, handling large data sets and ensuring seamless functionality.</p>
-              </div>
+        <div class="service-card">
+          <i class="fab fa-node-js icon"></i>
+          <div class="service-content">
+            <h5>Node.js Proficiency</h5>
+            <p>Building server-side applications with Node.js, handling large data sets and ensuring seamless
+              functionality.</p>
           </div>
+        </div>
       </div>
       <div class="col-md-4 mb-4">
-          <div class="service-card">
-              <i class="fas fa-globe icon"></i>
-              <div class="service-content">
-                  <h5>Cross-Browser Compatibility</h5>
-                  <p>Ensuring websites are compatible across all browsers, giving users a consistent experience no matter their choice.</p>
-              </div>
+        <div class="service-card">
+          <i class="fas fa-globe icon"></i>
+          <div class="service-content">
+            <h5>Cross-Browser Compatibility</h5>
+            <p>Ensuring websites are compatible across all browsers, giving users a consistent experience no matter
+              their choice.</p>
           </div>
+        </div>
       </div>
       <div class="col-md-4 mb-4">
-          <div class="service-card">
-              <i class="fas fa-cogs icon"></i>
-              <div class="service-content">
-                  <h5>Code Optimization</h5>
-                  <p>Optimizing code to enhance performance, reducing load times and creating efficient web experiences for users.</p>
-              </div>
+        <div class="service-card">
+          <i class="fas fa-cogs icon"></i>
+          <div class="service-content">
+            <h5>Code Optimization</h5>
+            <p>Optimizing code to enhance performance, reducing load times and creating efficient web experiences for
+              users.</p>
           </div>
+        </div>
       </div>
+    </div>
   </div>
-</div>
-<!--############################################################# education copy code -->
-<div class="container py-5">
-  <div class="row">
+  <!--############################################################# education copy code -->
+  <div class="container py-5">
+    <div class="row">
       <!-- Education Section -->
       <div class="col-md-6">
-          <h2 class="text-center text-danger mb-4">Education</h2>
-          <div class="education-card mb-4 shadow animate-card">
-              <div class="card-body">
-                  <h5 class="card-title font-weight-bold">BS in Computer Science</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">University of Sahiwal (2020-2024)</h6>
-                  <p class="text-danger font-weight-bold">3.41/4</p>
-                  <p class="card-text">The training provided by universities to prepare people to work in various sectors of the economy.</p>
-                  <a href="#" class="btn btn-outline-danger">View details »</a>
-              </div>
+        <h2 class="text-center text-danger mb-4">Education</h2>
+        <div class="education-card mb-4 shadow animate-card">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">BS in Computer Science</h5>
+            <h6 class="card-subtitle mb-2 text-muted">University of Sahiwal (2020-2024)</h6>
+            <p class="text-danger font-weight-bold">3.41/4</p>
+            <p class="card-text">The training provided by universities to prepare people to work in various sectors of
+              the economy.</p>
+            <a href="#" class="btn btn-outline-danger">View details »</a>
           </div>
-          <div class="education-card mb-4 shadow animate-card">
-              <div class="card-body">
-                  <h5 class="card-title font-weight-bold">Intermediate Education</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">FSC (2017-2019)</h6>
-                  <p class="text-danger font-weight-bold">710/1100</p>
-                  <p class="card-text">FSC from DPS Okara. Higher education leading to the award of an academic degree.</p>
-                  <a href="#" class="btn btn-outline-danger">View details »</a>
-              </div>
+        </div>
+        <div class="education-card mb-4 shadow animate-card">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Intermediate Education</h5>
+            <h6 class="card-subtitle mb-2 text-muted">FSC (2017-2019)</h6>
+            <p class="text-danger font-weight-bold">710/1100</p>
+            <p class="card-text">FSC from DPS Okara. Higher education leading to the award of an academic degree.</p>
+            <a href="#" class="btn btn-outline-danger">View details »</a>
           </div>
-          <div class="education-card mb-4 shadow animate-card">
-              <div class="card-body">
-                  <h5 class="card-title font-weight-bold">Secondary School Education</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Matric with Science (2016-2017)</h6>
-                  <p class="text-danger font-weight-bold">806/1100</p>
-                  <p class="card-text">Matric from Faisal Public Girl High School. Covers two phases on the Standard Classification.</p>
-                  <a href="#" class="btn btn-outline-danger">View details »</a>
-              </div>
+        </div>
+        <div class="education-card mb-4 shadow animate-card">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Secondary School Education</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Matric with Science (2016-2017)</h6>
+            <p class="text-danger font-weight-bold">806/1100</p>
+            <p class="card-text">Matric from Faisal Public Girl High School. Covers two phases on the Standard
+              Classification.</p>
+            <a href="#" class="btn btn-outline-danger">View details »</a>
           </div>
+        </div>
       </div>
 
       <!-- Experience Section -->
       <div class="col-md-6">
-          <h2 class="text-center text-danger mb-4">Experience</h2>
-          <div class="experience-card mb-4 shadow animate-card">
-              <div class="card-body">
-                  <h5 class="card-title font-weight-bold">Web Developer Intern</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">WebSphere UK Company (2024)</h6>
-                  <p class="text-danger font-weight-bold">6 months</p>
-                  <p class="card-text">Worked on front-end development with HTML, CSS, and JavaScript to build responsive websites.</p>
-                  <a href="#" class="btn btn-outline-danger">View details »</a>
-              </div>
+        <h2 class="text-center text-danger mb-4">Experience</h2>
+        <div class="experience-card mb-4 shadow animate-card">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Web Developer Intern</h5>
+            <h6 class="card-subtitle mb-2 text-muted">WebSphere UK Company (2024)</h6>
+            <p class="text-danger font-weight-bold">6 months</p>
+            <p class="card-text">Worked on front-end development with HTML, CSS, and JavaScript to build responsive
+              websites.</p>
+            <a href="#" class="btn btn-outline-danger">View details »</a>
           </div>
-          <div class="experience-card mb-4 shadow animate-card">
-              <div class="card-body">
-                  <h5 class="card-title font-weight-bold">Junior WordPress Developer</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">WebSphere UK SoftwareHouse (2024)</h6>
-                  <p class="text-danger font-weight-bold">1 year</p>
-                  <p class="card-text">Contributed to the development of client websites, focusing on responsive design and performance optimization.</p>
-                  <a href="#" class="btn btn-outline-danger">View details »</a>
-              </div>
+        </div>
+        <div class="experience-card mb-4 shadow animate-card">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Junior WordPress Developer</h5>
+            <h6 class="card-subtitle mb-2 text-muted">WebSphere UK SoftwareHouse (2024)</h6>
+            <p class="text-danger font-weight-bold">1 year</p>
+            <p class="card-text">Contributed to the development of client websites, focusing on responsive design and
+              performance optimization.</p>
+            <a href="#" class="btn btn-outline-danger">View details »</a>
           </div>
-          <div class="experience-card mb-4 shadow animate-card">
-              <div class="card-body">
-                  <h5 class="card-title font-weight-bold">Frontend Developer</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">WebSphere UK SoftwareHouse(2024)</h6>
-                  <p class="text-danger font-weight-bold">6 months</p>
-                  <p class="card-text">Designed and developed websites for small businesses, focusing on user experience and SEO optimization.</p>
-                  <a href="#" class="btn btn-outline-danger">View details »</a>
-              </div>
+        </div>
+        <div class="experience-card mb-4 shadow animate-card">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Frontend Developer</h5>
+            <h6 class="card-subtitle mb-2 text-muted">WebSphere UK SoftwareHouse(2024)</h6>
+            <p class="text-danger font-weight-bold">6 months</p>
+            <p class="card-text">Designed and developed websites for small businesses, focusing on user experience and
+              SEO optimization.</p>
+            <a href="#" class="btn btn-outline-danger">View details »</a>
           </div>
+        </div>
       </div>
-  </div>
+    </div>
 
-  <!-- Scroll Arrow -->
-  <div class="text-center mt-5">
+    <!-- Scroll Arrow -->
+    <div class="text-center mt-5">
       <a href="#education-section" class="scroll-arrow">
-          <i class="fa fa-arrow-down" style="font-size: 30px;"></i>
+        <i class="fa fa-arrow-down" style="font-size: 30px;"></i>
       </a>
-  </div>
-</div>
-
-
-
-
-      <!--skills and image  -->
-      <div class="container py-5">
-        <div class="row">
-            <!-- Skills Section -->
-            <div class="col-md-6">
-                <h2 class="text-center text-danger mb-4 fade-in">My Skills</h2>
-    
-                <!-- Skill Cards -->
-                <div class="skills-card card fade-in">
-                    <div class="card-body">
-                        <h5 class="card-title skill-title">HTML</h5>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skills-card card fade-in">
-                    <div class="card-body">
-                        <h5 class="card-title skill-title">CSS</h5>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skills-card card fade-in">
-                    <div class="card-body">
-                        <h5 class="card-title skill-title">JavaScript</h5>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-card card fade-in">
-                  <div class="card-body">
-                      <h5 class="card-title skill-title">JavaScript</h5>
-                      <div class="progress">
-                          <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                      </div>
-                  </div>
-              </div>
-              <div class="skills-card card fade-in">
-                <div class="card-body">
-                    <h5 class="card-title skill-title">JavaScript</h5>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                    </div>
-                </div>
-            </div>
-            </div>
-    
-            <!-- Image Section -->
-            <div class="col-md-6">
-                <h2 class="text-center text-danger mb-4 fade-in">My Image</h2>
-                <div class="image-section fade-in">
-                    <img src="images/Untitled design (64).png" alt="My Image">
-                </div>
-            </div>
-        </div>
     </div>
-      
-      <!-- Skills Section end -->
-      
-  
-<!-- ................................porfolio -->
+  </div>
 
-<!--  -->
-<section id="portfolio" class="py-5" >
-  <div class="container" id="Project">
-    <h2 class="text-center mb-4">My Portfolio</h2>
+
+
+
+  <!--skills and image  -->
+  <div class="container py-5">
     <div class="row">
-      
-      <!-- Portfolio Item 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card border-0 shadow-sm h-100" id="portfolio-item-1">
-          <img style="object-fit: cover;" src="images/Untitled design (60).png" class="card-img-top" alt="Portfolio Item 1">
-          <div class="card-body">
-            <h5 class="card-title"><b>Explore Italy Website</b></h5>
-            <p class="card-text">"Explore Italy is your ultimate guide to discovering Italy’s rich culture, stunning landscapes, historical landmarks, and unforgettable experiences."</p>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a href="https://ayeshkhadam.netlify.app/" class="btn btn-outline-danger">View Project</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Portfolio Item 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card border-0 shadow-sm h-100" id="portfolio-item-2">
-          <img src="images/Untitled design (61).png" class="card-img-top" alt="Portfolio Item 2">
-          <div class="card-body">
-            <h5 class="card-title"> <b>Ayesha Fitness Gym Website</b></h5>
-            <p class="card-texAyesha Fitness Gymt">"Ayesha Fitness Gym is a state-of-the-art fitness center offering personalized training, advanced equipment, and a motivating environment for all."
-            </p>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a href="file:///C:/Users/hp/Desktop/gym%20website/index.html" class="btn btn-outline-danger">View Project</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Portfolio Item 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card border-0 shadow-sm h-100" id="portfolio-item-3">
-          <img src="images/Untitled design (62).png" class="card-img-top" alt="Portfolio Item 3">
-          <div class="card-body">
-            <h5 class="card-title"><b>@yesha OnlineStore Website</b></h5>
-            <p class="card-text">"@yesha OnlineStore is your one-stop shop for stylish, high-quality products, offering a seamless online shopping experience with fast delivery."</p>
-            <p></p>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a href="https://ayeshaonlinestore.netlify.app/" class="btn btn-outline-danger">View Project</a>
-          </div>
-        </div>
-      </div>
+      <!-- Skills Section -->
+      <div class="col-md-12">
+        <h2 class="text-center text-danger mb-4 fade-in">My Skills</h2>
 
+        <!-- Skill Cards -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">HTML</h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">CSS</h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">Bootstrap</h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">Tailwind CSS</h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">JavaScript</h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">React Js </h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">Next Js </h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">Node Js </h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4">
+            <div class="skills-card card fade-in">
+              <div class="card-body">
+                <h5 class="card-title skill-title">WordPress </h5>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+      </div>
     </div>
   </div>
-</section>
-<!-- contact form -->
-<section id="contact-section">
-  <div class="container" id="contact">
-    <h2 class="text-center mb-5">Get in Touch</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <form id="contact-form">
-          <!-- Name Field -->
-          <div class="form-group">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-user"></i></span>
-              </div>
-              <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+
+  <!-- Skills Section end -->
+
+
+  <!-- ................................porfolio -->
+
+  <!--  -->
+  <section id="portfolio" data-aos="zoom-in" class="py-5">
+    <div class="container" id="Project">
+      <h2 class="text-center mb-4">My Portfolio</h2>
+      <div class="row">
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100" id="portfolio-item-1">
+            <img style="object-fit: cover;" src="images/Untitled design (60).png" class="card-img-top"
+              alt="Portfolio Item 1">
+            <div class="card-body">
+              <h5 class="card-title"><b>Explore Italy Website</b></h5>
+              <p class="card-text">"Explore Italy is your ultimate guide to discovering Italy’s rich culture, stunning
+                landscapes, historical landmarks, and unforgettable experiences."</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="https://ayeshkhadam.netlify.app/" class="btn btn-outline-danger">View Project</a>
             </div>
           </div>
+        </div>
 
-          <!-- Email Field -->
-          <div class="form-group">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-envelope"></i></span>
-              </div>
-              <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100" id="portfolio-item-2">
+            <img src="images/Untitled design (61).png" class="card-img-top" alt="Portfolio Item 2">
+            <div class="card-body">
+              <h5 class="card-title"> <b>Ayesha Fitness Gym Website</b></h5>
+              <p class="card-texAyesha Fitness Gymt">"Ayesha Fitness Gym is a state-of-the-art fitness center offering
+                personalized training, advanced equipment, and a motivating environment for all."
+              </p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="file:///C:/Users/hp/Desktop/gym%20website/index.html" class="btn btn-outline-danger">View
+                Project</a>
             </div>
           </div>
+        </div>
 
-          <!-- Subject Field -->
-          <div class="form-group">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-tag"></i></span>
-              </div>
-              <input type="text" class="form-control" id="contact-subject" placeholder="Subject" required>
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100" id="portfolio-item-3">
+            <img src="images/Untitled design (62).png" class="card-img-top" alt="Portfolio Item 3">
+            <div class="card-body">
+              <h5 class="card-title"><b>@yesha OnlineStore Website</b></h5>
+              <p class="card-text">"@yesha OnlineStore is your one-stop shop for stylish, high-quality products,
+                offering a seamless online shopping experience with fast delivery."</p>
+              <p></p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="https://ayeshaonlinestore.netlify.app/" class="btn btn-outline-danger">View Project</a>
             </div>
           </div>
+        </div>
 
-          <!-- Message Field -->
-          <div class="form-group">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-pencil-alt"></i></span>
-              </div>
-              <textarea class="form-control" id="contact-message" rows="5" placeholder="Your Message" required></textarea>
-            </div>
-          </div>
-
-          <!-- Submit Button -->
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary  px-4 py-2 " id="contact-submit">Send Message</button>
-          </div>
-
-        </form>
       </div>
     </div>
-  </div>
-</section>
-<!-- <style>
+  </section>
+  <!-- contact form -->
+  <section id="contact-section">
+    <div class="container" id="contact">
+      <h2 class="text-center mb-5">Get in Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="contact-form">
+            <!-- Name Field -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+              </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-0 text-white"><i
+                      class="fas fa-envelope"></i></span>
+                </div>
+                <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+              </div>
+            </div>
+
+            <!-- Subject Field -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-tag"></i></span>
+                </div>
+                <input type="text" class="form-control" id="contact-subject" placeholder="Subject" required>
+              </div>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-0 text-white"><i
+                      class="fas fa-pencil-alt"></i></span>
+                </div>
+                <textarea class="form-control" id="contact-message" rows="5" placeholder="Your Message"
+                  required></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary  px-4 py-2 " id="contact-submit">Send Message</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <style>
 
  
 </style> -->
   <!--  -->
+  <div class="loader">
+    <div class="outer-ring"></div>
+    <div class="orb"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="text-white " style="margin-top: 300px;">
+      <h2 class="text-center">Ayesha Khadim Portfolio</h2>
+    </div>
+  </div>
+  <!-- <style>
+
+ 
+</style> -->
+  <script>
+    setTimeout(() => {
+      document.querySelector(".loader").style.display = "none";
+    }, 3000); // Adjust time as needed
+  </script>
+
+  <style>
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999999999999999999;
+      background-color: rgb(0, 0, 0);
+    }
+
+    /* Outer ring for layered effect */
+    .outer-ring {
+      width: 150px;
+      height: 150px;
+      border: 3px solid rgba(0, 209, 255, 0.3);
+      border-radius: 50%;
+      position: absolute;
+      animation: spin 6s linear infinite;
+    }
+
+    /* Central glowing orb */
+    .orb {
+      width: 30px;
+      height: 30px;
+      background-color: #00d1ff;
+      border-radius: 50%;
+      position: absolute;
+      box-shadow: 0 0 20px #00d1ff, 0 0 40px #00d1ff, 0 0 60px #00d1ff;
+      z-index: 10;
+      /* Ensures orb stays above dots */
+    }
+
+    /* Orbiting dots */
+    .dot {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #ff00d1;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #ff00d1, 0 0 16px #ff00d1;
+      animation: orbit 3.5s linear infinite;
+    }
+
+    /* Position each dot at intervals around the orbit */
+    .dot:nth-child(1) {
+      transform: rotate(0deg) translate(70px) rotate(0deg);
+    }
+
+    .dot:nth-child(2) {
+      transform: rotate(90deg) translate(70px) rotate(-90deg);
+    }
+
+    .dot:nth-child(3) {
+      transform: rotate(180deg) translate(70px) rotate(-180deg);
+    }
+
+    .dot:nth-child(4) {
+      transform: rotate(270deg) translate(70px) rotate(-270deg);
+    }
+    .colorChange{
+      animation: anicolor 3s ease-in-out infinite ;
+
+    }
+    @keyframes anicolor {
+     0% {
+        color: transparent !important;
+
+      }
+      50%{
+        color: #dc3545;
+      }
+      100%{
+      color: black;
+      }
+    }
+    .animation{
+      animation: moveFade 2s ease-in-out infinite;
+    }
+    @keyframes moveFade {
+      0% {
+        transform: translateY(0); /* Starting position */
+        opacity: 0; /* Invisible (fade-out) */
+      }
+      50% {
+        transform: translateY(-20px); /* Thoda upar move */
+        opacity: 1; /* Fully visible (fade-in) */
+      }
+      100% {
+        transform: translateY(0); /* Wapas neeche */
+        opacity: 0; /* Invisible (fade-out) */
+      }
+    }
+    /* Animations */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes orbit {
+      0% {
+        transform: rotate(0deg) translate(70px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translate(70px) rotate(0deg);
+      }
+    }
+  </style>
+
+  <!-- Bootstrap and JS for Anim -->
 
 
-<!-- Bootstrap and JS for Anim -->
-
-       
 
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // AOS ko initialize karein
+      AOS.init({
+        duration: 1000, // Animation ki speed
+      });
+    </script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
